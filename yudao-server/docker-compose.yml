@@ -1,0 +1,21 @@
+version: '2.1'
+
+services:
+  yudao_server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: yudao-server
+    restart: always
+    ports:
+      - "48080:48080"
+    extra_hosts:
+      - "docker:10.0.0.90"
+      - "one:10.0.0.91"
+      - "two:10.0.0.92"
+      - "three:10.0.0.93"
+    mem_limit: 2g
+
+volumes:
+  data:
+  logs:
