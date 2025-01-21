@@ -14,6 +14,11 @@
  Date: 23/11/2024 10:16:46
 */
 
+CREATE database IF NOT EXISTS `ruoyi-vue-pro`;
+-- GRANT ALL PRIVILEGES ON `ruoyi-vue-pro`.* TO 'lbs'@'%';
+
+USE `ruoyi-vue-pro`;
+
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
 
